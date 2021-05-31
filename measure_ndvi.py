@@ -84,7 +84,7 @@ def run():
                 mean_ndvi = np.mean(ndvi_raw)
 
                 # Do the labelling
-                ndvi = cv2.rotate(ndvi, cv2.ROTATE_90_COUNTERCLOCKWISE)
+                ndvi = cv2.rotate(ndvi, cv2.ROTATE_90_CLOCKWISE)
                 label(ndvi, 'NDVI: '+str(round(mean_ndvi,3)))
 
                 # Process for display
